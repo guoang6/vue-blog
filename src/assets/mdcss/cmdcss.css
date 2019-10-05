@@ -1,0 +1,461 @@
+/* 全部背景样式*/
+.xiangqing,
+.post-content,
+.r-content>div{
+    opacity: 0.9;
+    background-color: #F9F9F5;
+}
+/* 图片限制*/
+img{
+    max-width: 100%;
+}
+/* 文章解析*/
+code {
+    border: 0;
+    background-color: #D6DBDF;
+    border-radius: 4px;
+    color: #2C3E50;
+    font-size: 90%;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+.lit {
+    color: #020808;
+}
+ol.linenums {
+    margin-left: 35px;
+}
+ol.linenums {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgba(102, 128, 153, 0.4);
+}
+ul, ol {
+    padding: 0;
+    margin: 0 0 10px 25px;
+}
+user agent stylesheet
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+code, pre {
+    padding: 0 3px 2px;
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-size: 12px;
+    color: #333;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+a {
+    color: #08c;
+    text-decoration: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+li {
+    line-height: 20px;
+}
+user agent stylesheet
+li {
+    text-align: -webkit-match-parent;
+}
+.toc ul {
+    list-style-type: none;
+}
+user agent stylesheet
+ul {
+    list-style-type: disc;
+}
+.pln {
+    color: #000;
+}
+pre code {
+    padding: 0;
+    color: inherit;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border: 0;
+}
+.kwd {
+    color: #008;
+}
+.pun, .opn, .clo {
+    color: #660;
+}
+.lit {
+    color: #066;
+}
+pre.prettyprint {
+    display: block;
+    background-color: rgba(102, 128, 153, 0.05);
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1) inset, 45px 0 0 rgba(102, 128, 153, 0.05) inset, 0 1px 0 rgba(102, 128, 153, 0.05);
+    padding: 9.5px;
+}
+pre.prettyprint {
+    margin-bottom: 20px;
+}
+/* Pretty printing styles. Used with prettify.js. */
+/* SPAN elements with the classes below are added by prettyprint. */
+.pln { color: #000 }  /* plain text */
+
+@media screen {
+  .str { color: #080 }  /* string content */
+  .kwd { color: #008 }  /* a keyword */
+  .com { color: #080 }  /* a comment */
+  .typ { color: #606 }  /* a type name */
+  .lit { color: #606  }  /* a literal value */
+  /* punctuation, lisp open bracket, lisp close bracket */
+  .pun, .opn, .clo { color: #660 }
+  .tag { color: #008 }  /* a markup tag name */
+  .atn { color: #606 }  /* a markup attribute name */
+  .atv { color: #080 }  /* a markup attribute value */
+  .dec, .var { color: #606 }  /* a declaration; a variable name */
+  .fun { color: red }  /* a function name */
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: rgba(102, 128, 153, 0.4) } /* IE indents via margin-left */
+ol.linenums { margin-left: 35px;}
+ol.linenums > li { padding-left: 15px;}
+pre.prettyprint {
+    display: block;
+    background-color: rgba(102, 128, 153, 0.05);
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1) inset, 45px 0 0 rgba(102, 128, 153, 0.05) inset, 0 1px 0 rgba(102, 128, 153, 0.05);
+    padding: 9.5px;
+}
+
+/* li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 { list-style-type: none } */
+
+/* Alternate shading for lines */
+/* li.L1, li.L3, li.L5, li.L7, li.L9 { } */
+
+/* Use higher contrast and text-weight for printable form. */
+@media print, projection {
+  .str { color: #060 }
+  .kwd { color: #006; font-weight: bold }
+  .com { color: #600; font-style: italic }
+  .typ { color: #404; font-weight: bold }
+  .lit { color: #044 }
+  .pun, .opn, .clo { color: #440 }
+  
+  .tag { color: #006; font-weight: bold }
+  .atn { color: #404 }
+  .atv { color: #060 }
+}
+ h1 {
+    color: #0077bb;
+}
+svg{
+    margin: o auto;
+}
+@media screen and (max-width: 800px) {
+  svg{
+    width: 100%;
+  }
+}
+/* 表格相关样式
+} */
+table {
+	max-width: 100%;
+	background-color: transparent;
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+.table {
+	width: 100%;
+	margin-bottom: 20px
+}
+
+.table th,
+.table td {
+	padding: 8px;
+	line-height: 20px;
+	text-align: left;
+	vertical-align: top;
+	border-top: 1px solid #ddd
+}
+
+.table th {
+	font-weight: 700
+}
+
+.table thead th {
+	vertical-align: bottom
+}
+
+.table caption+thead tr:first-child th,
+.table caption+thead tr:first-child td,
+.table colgroup+thead tr:first-child th,
+.table colgroup+thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+	border-top: 0
+}
+
+.table tbody+tbody {
+	border-top: 2px solid #ddd
+}
+
+.table .table {
+	background-color: #fff
+}
+
+.table-condensed th,
+.table-condensed td {
+	padding: 4px 5px
+}
+
+.table-bordered {
+	border: 1px solid #ddd;
+	border-collapse: separate;
+	*border-collapse: collapse;
+	border-left: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px
+}
+
+.table-bordered th,
+.table-bordered td {
+	border-left: 1px solid #ddd
+}
+
+.table-bordered caption+thead tr:first-child th,
+.table-bordered caption+tbody tr:first-child th,
+.table-bordered caption+tbody tr:first-child td,
+.table-bordered colgroup+thead tr:first-child th,
+.table-bordered colgroup+tbody tr:first-child th,
+.table-bordered colgroup+tbody tr:first-child td,
+.table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td {
+	border-top: 0
+}
+
+.table-bordered thead:first-child tr:first-child>th:first-child,
+.table-bordered tbody:first-child tr:first-child>td:first-child {
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+	-moz-border-radius-topleft: 4px
+}
+
+.table-bordered thead:first-child tr:first-child>th:last-child,
+.table-bordered tbody:first-child tr:first-child>td:last-child {
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px
+}
+
+.table-bordered thead:last-child tr:last-child>th:first-child,
+.table-bordered tbody:last-child tr:last-child>td:first-child,
+.table-bordered tfoot:last-child tr:last-child>td:first-child {
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomleft: 4px
+}
+
+.table-bordered thead:last-child tr:last-child>th:last-child,
+.table-bordered tbody:last-child tr:last-child>td:last-child,
+.table-bordered tfoot:last-child tr:last-child>td:last-child {
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	-moz-border-radius-bottomright: 4px
+}
+
+.table-bordered tfoot+tbody:last-child tr:last-child td:first-child {
+	-webkit-border-bottom-left-radius: 0;
+	border-bottom-left-radius: 0;
+	-moz-border-radius-bottomleft: 0
+}
+
+.table-bordered tfoot+tbody:last-child tr:last-child td:last-child {
+	-webkit-border-bottom-right-radius: 0;
+	border-bottom-right-radius: 0;
+	-moz-border-radius-bottomright: 0
+}
+
+.table-bordered caption+thead tr:first-child th:first-child,
+.table-bordered caption+tbody tr:first-child td:first-child,
+.table-bordered colgroup+thead tr:first-child th:first-child,
+.table-bordered colgroup+tbody tr:first-child td:first-child {
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+	-moz-border-radius-topleft: 4px
+}
+
+.table-bordered caption+thead tr:first-child th:last-child,
+.table-bordered caption+tbody tr:first-child td:last-child,
+.table-bordered colgroup+thead tr:first-child th:last-child,
+.table-bordered colgroup+tbody tr:first-child td:last-child {
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px
+}
+
+.table-striped tbody>tr:nth-child(odd)>td,
+.table-striped tbody>tr:nth-child(odd)>th {
+	background-color: #f9f9f9
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+	background-color: #f5f5f5
+}
+
+table td[class*=span],
+table th[class*=span],
+.row-fluid table td[class*=span],
+.row-fluid table th[class*=span] {
+	display: table-cell;
+	float: none;
+	margin-left: 0
+}
+
+.table td.span1,
+.table th.span1 {
+	float: none;
+	width: 44px;
+	margin-left: 0
+}
+
+.table td.span2,
+.table th.span2 {
+	float: none;
+	width: 124px;
+	margin-left: 0
+}
+
+.table td.span3,
+.table th.span3 {
+	float: none;
+	width: 204px;
+	margin-left: 0
+}
+
+.table td.span4,
+.table th.span4 {
+	float: none;
+	width: 284px;
+	margin-left: 0
+}
+
+.table td.span5,
+.table th.span5 {
+	float: none;
+	width: 364px;
+	margin-left: 0
+}
+
+.table td.span6,
+.table th.span6 {
+	float: none;
+	width: 444px;
+	margin-left: 0
+}
+
+.table td.span7,
+.table th.span7 {
+	float: none;
+	width: 524px;
+	margin-left: 0
+}
+
+.table td.span8,
+.table th.span8 {
+	float: none;
+	width: 604px;
+	margin-left: 0
+}
+
+.table td.span9,
+.table th.span9 {
+	float: none;
+	width: 684px;
+	margin-left: 0
+}
+
+.table td.span10,
+.table th.span10 {
+	float: none;
+	width: 764px;
+	margin-left: 0
+}
+
+.table td.span11,
+.table th.span11 {
+	float: none;
+	width: 844px;
+	margin-left: 0
+}
+
+.table td.span12,
+.table th.span12 {
+	float: none;
+	width: 924px;
+	margin-left: 0
+}
+
+.table tbody tr.success td {
+	background-color: #dff0d8
+}
+
+.table tbody tr.error td {
+	background-color: #f2dede
+}
+
+.table tbody tr.warning td {
+	background-color: #fcf8e3
+}
+
+.table tbody tr.info td {
+	background-color: #d9edf7
+}
+
+.table-hover tbody tr.success:hover td {
+	background-color: #d0e9c6
+}
+
+.table-hover tbody tr.error:hover td {
+	background-color: #ebcccc
+}
+
+.table-hover tbody tr.warning:hover td {
+	background-color: #faf2cc
+}
+
+.table-hover tbody tr.info:hover td {
+	background-color: #c4e3f3
+}
+.table-striped-white tbody>tr:nth-child(2n+1)>td, .table-striped-white tbody>tr:nth-child(2n+1)>th {
+    background-color: rgba(102,128,153,.05);
+}

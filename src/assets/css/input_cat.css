@@ -1,0 +1,295 @@
+.mao_box {
+    position: relative;
+    cursor: pointer;
+    /*width:424px;*/
+}
+
+.mao {
+    margin: 0 auto;
+    width: 40px;
+}
+
+/*耳朵*/
+.erduo {
+    width: 37.4px;
+    height: 12px;
+    position: absolute;
+    top: -0.6px;
+    left: 50%;
+    margin-left: -18px;
+    border-radius: 0% 0% 0% 0%;
+}
+    /*左耳*/
+    .erduo > div:first-child {
+        height: 20px;
+        width: 16px;
+        background: black;
+        transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        -moz-transform: rotate(-15deg);
+        -webkit-transform: rotate(-15deg);
+        -o-transform: rotate(-15deg);
+        border-radius: 4% 80% 0% 50%;
+        position: absolute;
+        left: -2px;
+        top: 0px;
+        transition: transform 1s,left 1s;
+    }
+    /*右耳*/
+    .erduo > div:last-child {
+        height: 18px;
+        width: 16px;
+        background: black;
+        transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -moz-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg);
+        -o-transform: rotate(15deg);
+        border-radius: 80% 4% 50% 0%;
+        position: absolute;
+        right: -2px;
+        top: 0px;
+          transition: transform 1s,right 1s;
+    }
+/*鼠标浮动耳朵样式*/
+/*左耳*/
+.mao:hover .erduo > div:first-child {
+    left: -1px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    border-radius: 4% 80% 0% 60%;
+    /*transition: all 1s;*/
+     /*transition: transform 1s,left 1s;*/
+}
+
+.mao:hover .erduo > div:last-child {
+    right: -1px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    border-radius: 80% 4% 60% 0%;
+    /*transition: transform 1s,right 1s;*/
+}
+/*眼睛*/
+.yanjing {
+    height: 6px;
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -15px;
+    overflow: hidden;
+}
+/*左眼*/
+.yanquan {
+    height: 10px;
+    width: 10px;
+    border: 2px solid #2e2e2e;
+    border-radius: 50% 50% 50% 50%;
+    overflow: hidden;
+    position: absolute;
+}
+    /*眼珠子 左*/
+    .yanquan > div:first-child {
+        height: 10px;
+        width: 3px;
+        background-color: #2e2e2e;
+        margin-left: 3px;
+        transition:all 1s;
+          /*transition-property: width;
+       transition-duration: 2s;*/
+    }
+.mao:hover .yanquan > div:first-child {
+  width:4px;
+    margin-left: 3px;
+    /*transition:all 1s;*/
+  
+}
+.yanquan_hedding {
+    height: 10px;
+    width: 18px;
+    border-top: 2px solid #2e2e2e;
+    border-radius: 50% 50% 50% 50%;
+    background: #F6F7F2;
+    margin-top: 5px;
+    margin-left: -4px;
+    position: absolute;
+     transition: margin-top 1s;
+}
+
+.hong {
+    position: absolute;
+    height: 2.8px;
+    width: 7px;
+    background: red;
+    top: 3.4px;
+    /*top: 64px;*/
+    left: 1.8px;
+    border-radius: 50% 50% 50% 50%;
+    background-image: -moz-radial-gradient( 50% 50%, rgba(253,214,240,0.8) 0%, rgba(253,224,244,0.8) 66%, rgba(253,234,247,0.8) 100%);
+    background-image: -webkit-radial-gradient( 50% 50%, rgba(253,214,240,0.8) 0%, rgba(253,224,244,0.8) 66%, rgba(253,234,247,0.8) 100%);
+    background-image: -ms-radial-gradient( 50% 50%, rgba(253,214,240,0.8) 0%, rgba(253,224,244,0.8) 66%, rgba(253,234,247,0.8) 100%);
+    opacity: 0.0;
+    /*transition: opacity 0.5s ease-in 0.2s;*/
+}
+
+.yan_right {
+    left: 19.6px;
+    top: 0px;
+    background: red;
+    position: absolute;
+}
+/*眼睛浮动属性*/
+.mao:hover .yanquan_hedding {
+    margin-top: 3px;
+    /*transition: margin-top 1s;*/
+}
+
+.mao:hover .hong {
+    /*top: 34px;*/
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in 0.2s;
+}
+
+
+/*右边花纹*/
+.huawen_right {
+    float: right;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); /* Safari 和 Chrome */
+    -moz-transform: rotateY(180deg); /* Firefox */
+    margin-top: -8.5px;
+}
+/*鼻子*/
+.bizi {
+    width: 3px;
+    height: 3.6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.5px;
+    top: 26px;
+}
+
+    .bizi > div:first-child {
+        width: 3px;
+        height: 1px;
+        border-bottom: .8px solid #2e2e2e;
+        border-radius: 0% 0% 50% 50%;
+        margin-top: -1px;
+    }
+
+.zuiba_box {
+    width: 20px;
+    height: 3.6px;
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -10px;
+    top: 26px;
+}
+
+.zuiba {
+    margin-left: 8.5px;
+    margin-top: .6px;
+}
+
+    .zuiba > div:first-child {
+        width: .4px;
+        height: .8px;
+        background: #2e2e2e;
+        margin-left: 1.3px;
+    }
+    /*右半边嘴巴*/
+    .zuiba > div:nth-child(2) {
+        width: 5px;
+        height: 4px;
+        border-bottom: .4px solid #2e2e2e;
+        border-left: .4px solid #2e2e2e;
+        border-radius:40% 0% 20% 50%;
+        margin-left: 1.3px;
+        margin-top: -2.6px;
+        position:absolute;
+            transition:  border-radius  1s;
+    }
+    /*左半边嘴巴*/
+    .zuiba > div:nth-child(3) {
+        width: 5px;
+        height: 4px;
+        border-bottom: 4px solid #2e2e2e;
+        border-right: 4px solid #2e2e2e;
+        border-radius:0% 40% 50% 20%;
+        margin-left: -3.8px;
+        margin-top: -2.6px;
+        position:absolute;
+            transition:  border-radius  1s;
+       
+    }
+
+.mao:hover .zuiba > div:nth-child(2) {
+    border-radius: 50% 50% 50% 50%;
+          width: 4px;
+           /*transition:  border-radius  1s ;*/
+}
+.mao:hover .zuiba > div:nth-child(3) {
+   
+         width: 4px;
+          margin-left: -3px;
+          border-radius: 50% 50% 50% 50%;
+          /*transition:  border-radius  1s;*/
+}
+  .svg_fnncat{
+
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    left: 500px;
+  }
+  #svg_14 {
+        animation: animation 5s infinite cubic-bezier(.34,1.61,.7,1);
+      }
+      @keyframes animation {
+        0%,
+        20% {
+          d: path('m260,305c0.08533,-0.88666 0.44235,-1.84396 0.7045,-2.46167c0.40552,-0.95554 0.67303,-1.77844 1.05267,-2.58566c0.3772,-0.802 0.86813,-1.50653 1.3815,-2.07001c0.76703,-0.84192 1.60251,-0.66754 2.50867,-0.88266c0.77313,-0.18356 1.29413,-1.07285 2.02466,-1.60001c0.81418,-0.58752 1.58655,-0.78119 2.32266,-1.10001c0.87222,-0.37778 1.51944,-1.04089 2.40533,-1.26398c0.86911,-0.21887 1.82135,-0.03601 2.76666,-0.03601c0.85468,0 1.70535,0 2.436,0c0.99734,0 1.79733,0 2.79602,0c0.76532,0 1.83966,0 2.76797,0c0.85419,0 1.79062,-0.00192 1.83334,0.83334c0.04449,0.87003 0.17365,1.59631 0.64734,2.21933c0.54355,0.71487 0.94867,1.08823 1.40982,1.59467c0.57397,0.63037 1.33936,0.65775 2.1095,1.186c0.70441,0.48315 0.83469,1.08133 1.66669,1.16666l0.16666,0.716l0.42532,0.70932')
+        }
+        30%,
+        50% {
+          d: path('m256,298.588325c1.574677,0.50523 1.88092,0.822116 2.166992,1.162302c0.396759,0.471804 0.889435,0.703039 1.593018,1.087999c0.469299,0.256779 1.084869,0.618395 1.698334,1.019349c0.531281,0.347233 1.164246,0.565063 1.682983,0.901682c0.570282,0.370074 0.847717,0.641322 1.194672,0.938201c0.378723,0.324063 0.766327,0.670246 1.164001,1.027202c0.399719,0.358783 0.786713,0.712144 1.164001,1.048403c0.664734,0.592477 1.155212,1.04288 1.59201,1.334092c0.684784,0.456544 1.200653,0.835823 2.03064,0.906155c0.881256,0.074676 1.579285,-0.173243 2.546692,-0.470668c0.55658,-0.171114 1.18808,-0.566473 1.866669,-0.774264c0.792328,-0.242612 1.403046,-0.426138 1.947327,-0.639639c0.483459,-0.189639 0.229095,-0.722988 0.636658,-1.077083c0.42981,-0.373425 0.274139,-0.718544 0.716003,-1.111084c0.326324,-0.289903 0.915894,-0.532918 1.442657,-0.848264c0.487579,-0.291873 1.299866,-0.628305 1.895996,-0.85337c0.779633,-0.294347 1.374817,-0.486101 1.996002,-0.710101c0.61615,-0.222188 1.700439,-0.555312 2.197357,-0.840166c0.600464,-0.344213 0.610413,-0.770308 0.988831,-1.167969c0.263824,-0.277232 0.774658,-0.740018 1.121979,-1.067417l0.578522,-0.232342l0.657166,0.309795')
+        }
+        60%,
+        80% {
+          d: path('m260,305c0.08533,-0.88666 0.44235,-1.84396 0.7045,-2.46167c0.40552,-0.95554 0.67303,-1.77844 1.05267,-2.58566c0.3772,-0.802 0.86813,-1.50653 1.3815,-2.07001c0.76703,-0.84192 1.60251,-0.66754 2.50867,-0.88266c0.77313,-0.18356 1.29413,-1.07285 2.02466,-1.60001c0.81418,-0.58752 1.58655,-0.78119 2.32266,-1.10001c0.87222,-0.37778 1.51944,-1.04089 2.40533,-1.26398c0.86911,-0.21887 1.82135,-0.03601 2.76666,-0.03601c0.85468,0 1.70535,0 2.436,0c0.99734,0 1.79733,0 2.79602,0c0.76532,0 1.83966,0 2.76797,0c0.85419,0 1.79062,-0.00192 1.83334,0.83334c0.04449,0.87003 0.17365,1.59631 0.64734,2.21933c0.54355,0.71487 0.94867,1.08823 1.40982,1.59467c0.57397,0.63037 1.33936,0.65775 2.1095,1.186c0.70441,0.48315 0.83469,1.08133 1.66669,1.16666l0.16666,0.716l0.42532,0.70932')
+        }
+        90%,
+        99% {
+          d: path('m256,298.588325c1.574677,0.50523 1.88092,0.822116 2.166992,1.162302c0.396759,0.471804 0.889435,0.703039 1.593018,1.087999c0.469299,0.256779 1.084869,0.618395 1.698334,1.019349c0.531281,0.347233 1.164246,0.565063 1.682983,0.901682c0.570282,0.370074 0.847717,0.641322 1.194672,0.938201c0.378723,0.324063 0.766327,0.670246 1.164001,1.027202c0.399719,0.358783 0.786713,0.712144 1.164001,1.048403c0.664734,0.592477 1.155212,1.04288 1.59201,1.334092c0.684784,0.456544 1.200653,0.835823 2.03064,0.906155c0.881256,0.074676 1.579285,-0.173243 2.546692,-0.470668c0.55658,-0.171114 1.18808,-0.566473 1.866669,-0.774264c0.792328,-0.242612 1.403046,-0.426138 1.947327,-0.639639c0.483459,-0.189639 0.229095,-0.722988 0.636658,-1.077083c0.42981,-0.373425 0.274139,-0.718544 0.716003,-1.111084c0.326324,-0.289903 0.915894,-0.532918 1.442657,-0.848264c0.487579,-0.291873 1.299866,-0.628305 1.895996,-0.85337c0.779633,-0.294347 1.374817,-0.486101 1.996002,-0.710101c0.61615,-0.222188 1.700439,-0.555312 2.197357,-0.840166c0.600464,-0.344213 0.610413,-0.770308 0.988831,-1.167969c0.263824,-0.277232 0.774658,-0.740018 1.121979,-1.067417l0.578522,-0.232342l0.657166,0.309795')
+        }
+        
+      }
+ #svg_13 {
+        animation: animation1 5s infinite ;
+      }
+      @keyframes animation1 {
+        0%,
+        20% {
+          d: path('m269,282c1,1.574677 1.545074,2.253174 1.87851,3.100006c0.332703,0.845001 0.12149,1.699982 0.12149,2.614655c0,0.860016 0.151031,1.665985 0.647339,2.338013c0.508911,0.689087 0.352661,1.594666 0.352661,2.522003c0,0.850647 0')
+        }
+        30%,
+        50% {
+          d: path('m269,282c1,1.574677 1.545074,2.253174 1.87851,3.100006c0.332703,0.845001 0.12149,1.699982 0.12149,2.614655c0,0.860016 0.151031,1.665985 0.647339,2.338013c0.508911,0.689087 0.352661,1.594666 0.352661,2.522003c0,0.850647 0,1.782501 0,2.623993c0,0.967987 0.047302,1.827911 0,2.717316c-0.042725,0.803406 -0.981995,1.083435 -1,1.917358c-0.017578,0.813812 0,1.741333 0.5,2.1875l0.438324,0.626495l-0.771667,0.352661')
+        }
+        60%,
+        80% {
+          d: path('mm269,282c1,1.574677 1.545074,2.253174 1.87851,3.100006c0.332703,0.845001 0.12149,1.699982 0.12149,2.614655c0,0.860016 0.151031,1.665985 0.647339,2.338013c0.508911,0.689087 0.352661,1.594666 0.352661,2.522003c0,0.850647 0')
+        }
+        90%,
+        99% {
+          d: path('m269,282c1,1.574677 1.545074,2.253174 1.87851,3.100006c0.332703,0.845001 0.12149,1.699982 0.12149,2.614655c0,0.860016 0.151031,1.665985 0.647339,2.338013c0.508911,0.689087 0.352661,1.594666 0.352661,2.522003c0,0.850647 0,1.782501 0,2.623993c0,0.967987 0.047302,1.827911 0,2.717316c-0.042725,0.803406 -0.981995,1.083435 -1,1.917358c-0.017578,0.813812 0,1.741333 0.5,2.1875l0.438324,0.626495l-0.771667,0.352661')
+        }
+        
+      }
